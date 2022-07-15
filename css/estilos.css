@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  header{
+      background: black;
+      border: 300px;
+      margin: 0%;
+      height: 100%;
+      
+  }
+
+    
+  h3{
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      text-transform: capitalize;
+  
+  }
+  
+  
+  
+  
+  .form-login {
+      width: 400px;
+      height: 340px;
+      background:#424242;
+      margin: auto;
+      margin-top: 90px;
+      margin-bottom: 90px;
+      box-shadow: 7px 13px 37px #000;
+      padding: 20px 30px;
+      border-top: 4px solid #000;
+      color: white;
+  
+  }
+  
+  .form-login h1{
+      margin: 0;
+      text-align: center;
+      font-size: 20px;
+      height: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .controls{
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 5px 5px;
+      background: #252323;
+      font-size: 14px;
+      font-weight: bold;
+  
+  }
+  
+  .buttons{
+      width: 100%;
+      height: 40px;
+      background: #252323 ;
+      border: none;
+      color: white;
+      margin-bottom: 16px;
+  }
+  
+  .form-login p{
+      height: 40px;
+      text-align: center;
+      border-bottom: 1px solid;
+  
+  }
+  
+  .form-login a{
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+  }
+  
+  .form-login a:hover{
+      text-decoration: underline;
+  }
+  
+  body{
+      background:;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      margin: 0px;
+      padding:0;
+      background-image: url(../multimedia/zarafondof.jpg);
+      background-size: cover;
+      background-position: center;  
+      border: 0%;
+      display: grid;
+  
+  }
+  
+  .container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .cards{
+      width: 300px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 15px;
+  
+  
+  }
+  
+  .card-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  
+  .card-footer button{
+      width: 150px;
+      background: black;
+      color: white;
+      border-radius: 15px;
+      border: 2px solid black;
+      padding: 6px;
+      font-size: 17px;
+      cursor: pointer;
+      margin-bottom: 10px;
+  
+  }
+  
+  .card-footer button:hover{
+      background-color: white;
+      color: black;
+      border: 2px solid;
+  
+         
+  }
+  
+  
+  .card-img img{
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+  }
+  
+  .card-body h3{
+      text-align: center;
+  }
+  
+  .card-body p{
+      text-align: justify;
+       margin-bottom: 10px;
+       padding: 5px;
+  }
+  
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+  }
+   
+  h2{
+      background-color: black;
+      margin: 0%;
+  }
+  
+  h3{
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  p{
+      line-height: 20px;
+      color: #424242;
+  }
+  footer{
+       background: pink;
+   }
+  
+   body{
+       color: black;
+   }
+  
+   #titulo{
+       color: #424242;
+   }
+  
+   .titulo{
+       color: #424242;
+   }
+  
+   .parrafo{
+       width: 100%;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 25px;
+       color: ;   
+   }
+  
+   .btn{
+      font-family:'Times New Roman', Times, serif
+      font-size: 30px;
+      background: #424242;
+      color:white;
+      padding: 10px 15px 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;   
+  
+   }
+  
+   .btn:hover{
+      background: white;
+      color: black
+  
+  }
+  
+  ul{
+      float: right;
+  }
+  
+  
+  ul li{
+      display:inline-block;
+  
+  }
+  
+  nav ul li a{
+      background: #424242;
+      text-decoration: none;
+      color: white;
+      padding: 12px;
+      border-radius: 5px;  
+     
+  }
+  
+  nav ul li a:hover{
+      color:black
+  }
+  
+  section{
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  footer{
+      background: #424242;
+      min-height: 100px;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      text-transform: capitalize;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px;
+      
+  }
+  
+  footer i{
+      font-size: 35px;
+      color: black;
+      letter-spacing: 15px;
+      margin-bottom: 20px;
+  }
+  
+  .card{
+      width:48%;
+      margin: 1%;
+      float:left;
+  }
+  
+  .encabezado{
+      height: 60px;
+      width: 100%;
+      background-color: black;
+      margin: 0%;
+  }
+  
+  .model{
+      height: 200px;
+      width: 400%;
+      background-color: black;
+  }
+  
+  main{
+      background-image: url(multimedia/zarafondo.jpg);
+      height: 100vh;
+      width: 100%;
+  }
+  
