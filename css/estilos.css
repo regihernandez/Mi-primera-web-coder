@@ -113,6 +113,78 @@
 }
 
 /*desarrollo galeria de tendencias*/
+
+/*agregado transformaciones CSS Polaroid*/
+
+ .polaroid-gallery{
+    text-align: center;
+}
+
+.polaroid-gallery__title{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 48px;
+    transition: all 0.3s;
+}
+
+.polaroid-card{
+    display: inline-block;
+    margin: 32px;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.polaroid-card img{
+    object-fit: cover;
+}
+ 
+.polaroid-card figcaption{
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.polaroid-card:nth-of-type(even){
+  transform:rotate(12deg);  
+}
+
+.polaroid-card:nth-of-type(odd){
+  transform:rotate(-12deg);  
+} 
+
+.polaroid-card:nth-of-type(odd){
+  transform:rotate(-12deg);  
+} 
+
+.polaroid-card:nth-of-type(even): ::before{
+ content: '';
+ display: block;
+ background-color: rgba(222, 220, 200, 0.66);
+ width: 100px;
+ height: 25px;
+ transform: translate(-30px,-25px) rotate(-24deg);
+}
+
+.polaroid-card:nth-of-type(odd): ::before{
+  content: '';
+  display: block;
+  background-color: rgba(222, 220, 200, 0.86);
+  width: 100px;
+  height: 25px;
+  transform: translate(-30px,-25px) rotate(-24deg);
+}
+
+.polaroid-card:hover{
+   transform: scale(1.25);
+
+}
+
+/*agregado transformaciones CSS Polaroid*/
+
+
   
   .form-login {
       width: 400px;
