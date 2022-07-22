@@ -5,22 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <h2>Blog</h2>
 <header>
-<nav>
-    <a href="index.html"> <img src="multimedia/percha-removebg-preview.png" alt="logo mi primera web"></a>
-    <ul>
-        <li><a href="home.html">Home</a> </li>
-        <li><a href="nosotros.html">Nosotros</a> </li>
-        <li><a href="servicios.html">Servicios</a> </li>
-        <li><a href="blog.html">Blog</a> </li>
-        <li><a href="contacto.html">Contacto</a> </li>
-     </ul>      
-       
-</nav>
+    <! ––desarrollo de barra nav ––>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Bienvenidos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <! ––desarrollo de barra nav ––>
 
 
 </header>
@@ -28,7 +66,7 @@
 <! ––desarrollo de polaroid ––>
 
 <section class="polaroid-gallery">
-    <h1 class="polaroid-gallery__title">Polaroid image Gallery</h1>
+    <h1 class="polaroid-gallery__title">Nuestro Staff</h1>
     <figure class="polaroid-card">
      <img src="multimedia/persona1.jpg" width="300px" height="400px" alt="persona">
      <figcaption>Miss Inglaterra</figcaption>
@@ -53,33 +91,25 @@
 
 
 <section>
-    <p> <strong>Lorem Ipsum</strong>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vPhg6sc1Mk4" title="YouTube video player" frameborder="0" allow="accelerometer; 
-        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <audio controls src="multimedia/funlife.mp3.mp3"></audio>
-        <p> <strong>Lorem Ipsum</strong>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <h3>Formulario de Contacto</h3>
-    Nombre <input type="text" required><br>
-    Edad <input type="number"><br>
-    Fecha <input type="date"><br>
-    Email <input type="email"><br>
-    Contraseña <input type="password"><br>
-    Telefono <input type="text required"
-    placeholder="Escribe tu tel"><br>
-    <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="escribe tu comentario"></textarea><br>
-    <input type="submit" value="enviar"><br>
-    <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/P3pFRCFodog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-     gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <hr>
+  <p> <strong>Lorem Ipsum</strong>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  
+      
     
+   
 
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+crossorigin="anonymous"></script>
 
 </body>
 <footer><br>
