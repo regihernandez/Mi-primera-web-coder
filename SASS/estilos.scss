@@ -73,8 +73,8 @@ ul {
     background: #222222;
 
     &__form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
     }
 
@@ -83,18 +83,18 @@ ul {
 .contact-form form label {
     display: block;
 
-    &__p{
+    &__p {
         margin: 0;
         padding: 1em;
     }
 
-    &__.block{
+    &__.block {
         grid-column: 1 / 3;
     }
-     
+
     &__button,
     &__input,
-    &__textarea{
+    &__textarea {
         width: 100%;
         padding: .7em;
         border: none;
@@ -105,7 +105,7 @@ ul {
 
     }
 
-    &__button{
+    &__button {
         background: pink;
         border: 0;
         text-transform: uppercase;
@@ -114,14 +114,141 @@ ul {
     }
 
     &__button:hover,
-    &__button:focus{
+    &__button:focus {
         background: #d63031;
         color: black;
         transition: background-color 1s ease-out;
         outline: 0;
     }
-    
+
 }
 
 
 /*desarrollo formulario de contacto*/
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+}
+
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        &__>* {
+            padding: 2em;
+        }
+    }
+
+    /* fin desarrollo formulario de contacto*/
+
+    /*desarrollo galeria de tendencias*/
+
+    .Galeria {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        padding: 15px;
+        grid-gap: 10px;
+    }
+
+    .item {
+
+        border: 2px solid white;
+        border-radius: 10px;
+        filter: grayscale(100%);
+        background-position: center;
+
+        &__:hover {
+            transform: scale(1.5);
+            transition: all 0.8s;
+        }
+
+        &__1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            background-image: url(../multimedia/moda6.jpg);
+            background-size: cover;
+        }
+
+        &__2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-image: url(../multimedia/textil1.jpg);
+            background-size: cover;
+        }
+
+
+        &__3 {
+            grid-column: 3/5;
+            grid-row: 1/2;
+            background-image: url(../multimedia/tipos-de-moda.jpg);
+            background-size: cover;
+        }
+
+        &__4 {
+            grid-column: 2/3;
+            grid-row: 2/4;
+            background-image: url(../multimedia/moda9.jpg);
+            background-size: cover;
+
+        }
+
+        &__5 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background-image: url(../multimedia/textil2.jpg);
+            background-size: cover;
+        }
+
+
+        &__6 {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            background-image: url(../multimedia/moda2.jpg);
+            background-size: cover;
+
+        }
+
+
+        &__7 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            background-image: url(../multimedia/accesorio1.jpg);
+            background-size: cover;
+        }
+
+        &__8 {
+            grid-column: 3/5;
+            grid-row: 3/4;
+            background-image: url(../multimedia/nosotros.jpg);
+            background-size: cover;
+        }
+
+    }
+
+
+    @media only screen and (min-width: 320px) {
+        .galeria {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+
