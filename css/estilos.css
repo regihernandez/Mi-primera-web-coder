@@ -284,14 +284,6 @@ ul {
   transform:rotate(-12deg);  
 } 
 
-.polaroid-card:nth-of-type(even): ::before{
- content: '';
- display: block;
- background-color: rgba(222, 220, 200, 0.66);
- width: 100px;
- height: 25px;
- transform: translate(-30px,-25px) rotate(-24deg);
-}
 
 .polaroid-card:nth-of-type(odd): ::before{
   content: '';
